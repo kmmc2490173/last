@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>2048 Simple</title>
+        
+        <link href="C:\Users\R9\OneDrive\桌面\20488\2048.css" rel="stylesheet">
+        <script src=" C:\Users\R9\OneDrive\桌面\20488\2048.js"></script>
+        
+    </head>
+    <body>
+        
+        <div id="container">
+            <div id="splash" class="screen">
+                <h1>20<span class="char1">4</span><span class="char2">8</span></h1>
+                <button id="start" onclick="start()">New Game</button>
+            </div>
+            <div id="pause" class="screen">
+                <h1>Paused</h1>
+                <button onclick="reset()">reset</button>
+                <button onclick="resume()">continue</button>
+            </div>
+            <div id="end" class="screen">end</div>
+            <div id="game" class="screen">
+                <h1>2048</h1>
+                <div id="info">score:
+                    <span id="score"></span>
+                    <button type="button" id="pausebtn" onclick="pause()">Pause</button>
+                </div>
+                <div id="gamearea">
+                    <div class="element"></div>
+                    <div class="element"></div>
+                    <div class="element"></div>
+                    <div class="element"></div>
+                    <div class="element"></div>
+                    <div class="element"></div>
+                    <div class="element"></div>
+                    <div class="element"></div>
+                    <div class="element"></div>
+                    <div class="element"></div>
+                    <div class="element"></div>
+                    <div class="element"></div>
+                    <div class="element"></div>
+                    <div class="element"></div>
+                    <div class="element"></div>
+                    <div class="element"></div>
+                </div>
+            </div>
+        </div>
+        <div id="control">
+            <h2>控制</h2>
+            <button onclick="left()">左左</button>
+            <button onclick="up()">上上</button>
+            <button onclick="down()">下下</button>
+            <button onclick="right()">右右  </button>
+        </div>
+        <p>你們好呀~</p>
+<script>
+    var q = 4;
+//массив элементов
+    var arr = document.getElementsByClassName("element");
+    init();
+    
+</script>        
+    </body>
+</html>
